@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(/fonts/Bebas\ Neue/);
+    font-family: Gentium;
+    src: url(/fonts/Gentium/)
+}
+
+
+
+header {
+    background-color: #3F402D;
+    position: center;
+    border-radius: 20px 20px 0px 0px;
+    width: 1704px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+ 
+body {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #D9D9D9;
+    background-image: url("/images/yellowjacketbeach.png")
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 275px;
+    size: 100%
+}
+
+.logo {
+    display: block;
+    size: 100%;    
+    margin-left: 40%;
+}
+
+.border {
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+
+button {
+    width: 8%;
+    height: 20%;
+    padding: .2%;
+    padding-top: .3%;
+    font-family: Bebas Neue;
+    font-size: 1.2em;
+    background-color: #F2F2F2;
+    color: #3F402D;
+    display: inline-block;
+    margin-left: 210px;
+    margin-bottom: 2px;
+    border: solid;
+    border-radius: 100px;
+}
+
+.menu {
+    text-decoration: none;
+    color: #3F402D;
+}
+
+.home {
+    size: 100%;
+}
+
+.explore {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+section h1 {
+    font-family: Bebas Neue;
+    font-size: 4.5rem;
+    color: #F2F2F2;
+    position: absolute;
+    size: fixed;
+    margin-top: -765px;
+    margin-left: 25%;
+    text-shadow: 2px 2px #3F402D;
+}
+
+.cta1 {
+    font-family: Bebas Neue;
+    text-decoration: none;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    color: #F2F2F2;
+    background-color: #850000F5;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: -15px;
+    margin-top: -520px;
+    margin-left: 675px;
+    
+}
+
+footer {
+background-color: #3F402D;
+font-family: Gentium;
+color: #F2F2F2;
+text-align: center;
+width: 1704px;
+height: 25px;
+padding-top: 10px;
+}
+
+.footermenu {
+    text-decoration: none;
+    color: #F2F2F2;
+    margin-left: 50px;
+}
+
+.product {
+    width: 200px;
+    display: inline-block;
+    }
+
+.productbox {
+    align-items: center;
+    width: 250px;
+    background-color: #F2F2F2;
+    border: solid 2px #3F402D;
+}
+
+.about h1 {
+    font-family: Bebas Neue;
+    color: #3F402D;
+}
