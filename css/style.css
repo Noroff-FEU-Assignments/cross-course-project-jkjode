@@ -8,22 +8,12 @@
 }
 
 body {
-    display: grid;
-    grid-gap: .5em;
-    grid-template-areas: 
-    'header header header' 
-    'nav nav nav' 
-    'main main main' 
-    'footer footer footer';
-    grid-template-rows: auto;
-    overflow-x: 100vw;
+    background-color: #D9D9D9;
+    width: 90vw;
+    overflow-x: hidden;
 }
 
-header {grid-area: header;}
-nav {grid-area: nav;}
-main {grid-area: main;}
-footer {grid-area: footer;}
-
+/*header*/
 header {
     background: url(/images/rainydays_logo.png);
     background-repeat: no-repeat;
@@ -37,10 +27,12 @@ header {
     display: block;
     position: center;
     width: 90vw;
-    margin-left: 5%;
-    margin-right: 5%;
+    overflow-x: hidden;
+    
 }
-
+#header {
+    overflow-x: hidden;
+}
 #headerContent {
     margin: 0 auto; 
     width: 50%;
@@ -65,17 +57,9 @@ header {
     justify-content: center;
 }
  
-body {
-    
-    background-color: #D9D9D9;
-    background-image: url("/images/yellowjacketbeach.png") center no-repeat;
-    width: 100vw;
-    
-}
-
 .logo {
     display: inline-block;
-    size: 99%;    
+    size: 100%;    
     align-items: center;
 }
 
@@ -89,12 +73,13 @@ body {
 /*navigation*/
 nav { 
     height: 50px;
-    
+    width: 90vw;
+    overflow-x: hidden;
 }
 
 ul {
     text-align: center;
-    
+    overflow-x: hidden;
 }
 
 
@@ -127,25 +112,23 @@ ul {
 }
 
 
-/*index image*/
+/*index main elements*/
 
 .browser {
     width: 90vw;
     z-index: 1;
     position: absolute;
-    display: ;
+    overflow-x: hidden;
 }
 
 
-main {
+/*main {
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100vw;
+    
     height: 81vh;
     z-index: 1;
     
-}
+}*/
 
 .hometext {
     font-family: Bebas Neue;
@@ -188,10 +171,8 @@ color: #F2F2F2;
 text-align: center;
 height: 25px;
 padding-top: 10px;
-margin-left: 5%;
-margin-right: 5%;
 width: 90vw;
-
+overflow-x: hidden;
 }
 
 .footermenu {
@@ -207,12 +188,13 @@ width: 90vw;
     .index {
         background: url(/images/yellowjacketbeach.png);
         background-repeat: no-repeat;
-        width: 100vw;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 90vw;
+        overflow-x: hidden;
     }
 
-   
+   body {
+       overflow-x: hidden;
+   }
     
 }
 
@@ -223,8 +205,7 @@ width: 90vw;
         background: url(/images/m_yellowjacketbeach1.png);
         background-repeat: no-repeat;
         width: 90vw;
-        margin-left: 5%;
-        margin-right: 5%;
+        
     }
     
    
