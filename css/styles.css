@@ -247,7 +247,7 @@ width: 89vw;
         top: -10em;
     } 
     
-    #hamburger-menu:checked ~ nav {
+    #hamburger-menu:checked ~ .mobile-menu {
         display: block;
     }
     
