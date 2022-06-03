@@ -239,7 +239,32 @@ width: 89vw;
         display: none;
         
     }
+/*hamburger menu*/
+    .hamburger {
+        margin-top: 1em;
+        margin-left: 2em;
+        z-index: 9;
+    }
+
+    .hamburger-menu{ 
+        display: none;
+        
+    }
     
+    #hamburger-menu{
+        display:none;
+        color: #F2F2F2;
+        position: relative;
+        top: -10em;
+    } 
+    
+    #hamburger-menu:checked ~ nav {
+        display: block;
+    }
+    
+    /*end of hamburger menu*/
+
+
    .cta {
     font-family: Bebas Neue;
     text-decoration: none;
