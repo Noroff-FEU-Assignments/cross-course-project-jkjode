@@ -218,27 +218,16 @@ width: 89vw;
         
     }
 
-   
+   .hamburger {
+       display: none;
+   }
     
 }
 
 /*Mobile styling*/
 @media  (max-width:600px) {
 
-    .index { 
-        background: url(/images/m_yellowjacketbeach1.png);
-        background-repeat: no-repeat;
-        width: 90vw;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
     
-   
-
-    ul {
-        display: none;
-        
-    }
 /*hamburger menu*/
     .hamburger {
         margin-top: 1em;
@@ -262,8 +251,22 @@ width: 89vw;
         display: block;
     }
     
-    /*end of hamburger menu*/
+/*end of hamburger menu*/
 
+    .index { 
+        background: url(/images/m_yellowjacketbeach1.png);
+        background-repeat: no-repeat;
+        width: 90vw;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+   
+
+    ul {
+        display: none;
+        
+    }
 
    .cta {
     font-family: Bebas Neue;
