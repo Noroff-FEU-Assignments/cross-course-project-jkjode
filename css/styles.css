@@ -202,6 +202,142 @@ width: 89vw;
     margin-left: 50px;
 }
 
+
+/*Browser styling*/
+@media (min-width:601px) {
+
+    .index {
+        background: url(/images/yellowjacketbeach.png);
+        background-repeat: no-repeat;
+        width: 89vw;
+        left: 50%;
+        right: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+
+   .hamburger {
+       display: none;
+   }
+    
+   .m_hometext {
+       display: none;
+   }
+
+}
+
+
+/*Mobile styling*/
+
+@media  (max-width:600px) {
+
+    
+
+
+    .index { 
+        background: url(/images/m_yellowjacketbeach1.png);
+        background-repeat: no-repeat;
+        width: 89vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+   .browser-nav {
+       display: none;
+   }
+
+ 
+   .cta {
+    font-family: Bebas Neue;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    color: #F2F2F2;
+    background-color: #850000F5;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    padding: 15px 8px 5px 8px;
+    z-index: 8;
+    position: absolute;
+    top: 17em;
+    left: 6em;
+   }
+
+   .hometext {
+       display: none;
+   }
+
+    .m_hometext {
+        font-family: Bebas Neue;
+        color: #F2F2F2;
+        text-shadow: 2px 2px #3F402D;
+        font-size: 2.5em;
+        top: 4.5em;
+        text-align: center;
+        z-index: 2;
+    }
+
+
+
+/*hamburger menu*/
+    
+  .mobile-menu { 
+    display: none;
+    background-color: #F2F2F2;
+    font-size: 2em;
+    width: 6em;
+    height: 7em;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #3F402D;
+    
+}
+
+.mobile-menu-content {
+    height: 7em;
+    text-decoration: none;
+    color: #3F402D;
+    display: block;
+    z-index: 999;    
+}
+
+#hamburger-menu{
+    display:none;
+    
+} 
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+       
+}
+
+
+.hamburger {
+    background-color: #D9D9D9;
+    width: 2em;
+    color: #3F402D;
+    padding-left: 5px;
+    z-index: 20;
+    margin-left: 1.7em;
+    
+}
+   
+/*end of hamburger menu*/
+}
+
 /*JACKETS*/
 .productbox {
     
@@ -234,122 +370,19 @@ width: 89vw;
     float: right;
 }
 
-/*Browser styling*/
-@media (min-width:601px) {
-
-    .index {
-        background: url(/images/yellowjacketbeach.png);
-        background-repeat: no-repeat;
-        width: 89vw;
-        left: 50%;
-        right: 50%;
-        margin-left: 5%;
-        margin-right: 5%;
-        
+@media (max-width:600px) {
+    .waterfall {
+        width: 50vw;
+        align-content: space-around;
     }
-
-   .hamburger {
-       display: none;
-   }
     
 }
 
+/*CONTACT*/
 
-/*Mobile styling*/
-
-@media  (max-width:600px) {
-
-    
-
-
-    .index { 
-        background: url(/images/m_yellowjacketbeach1.png);
-        background-repeat: no-repeat;
-        width: 89vw;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-   .browser-nav {
-       display: none;
-   }
-
- 
-   .cta {
-    font-family: Bebas Neue;
-    text-decoration: none;
-    font-size: 2rem;
+p { 
+    font-size: Bebas Neue;
+    font-size: x-large;
     text-align: center;
-    color: #F2F2F2;
-    background-color: #850000F5;
-    border-radius: 25px;
-    width: 200px;
-    height: 50px;
-    padding: 15px 8px 5px 8px;
-    z-index: 8;
-    position: absolute;
-    top: 17em;
-    left: 6em;
-   }
-
-    .hometext {
-        font-size: 2.5em;
-        top: 60px;
-        z-index: 2;
-    }
-
-
-
-/*hamburger menu*/
-    
-  .mobile-menu { 
-    display: none;
-    background-color: #F2F2F2;
-    font-size: 2em;
-    width: 6em;
-    height: 7em;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    overflow-y: hidden;
-    position: absolute;
-    
-}
-
-a {
-    text-decoration: none;
-    color: #3F402D;
-    
-}
-
-.mobile-menu-content {
-    height: 7em;
-    text-decoration: none;
-    color: #3F402D;
-    display: block;
-    z-index: 60;    
-}
-
-#hamburger-menu{
-    display:none;
-    
-} 
-
-#hamburger-menu:checked ~ nav {
-    display: block;
-       
-}
-
-
-.hamburger {
-    background-color: #D9D9D9;
-    width: 2em;
-    color: #3F402D;
-    padding-left: 5px;
-    z-index: 20;
-    margin-left: 1.7em;
-    
-}
-   
-/*end of hamburger menu*/
+    margin-top: 20vh;
 }
