@@ -170,12 +170,12 @@ main {
     font-family: Bebas Neue;
     font-size: 4rem;
     color: #F2F2F2;
-    margin-top: 245px;
     text-shadow: 2px 2px #3F402D;
-    top: 1em;
     z-index: 9;
-    position: relative;
+    position: absolute;
     background-size: contain;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .cta {
