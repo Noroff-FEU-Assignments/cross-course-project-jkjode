@@ -118,8 +118,8 @@ ul {
     }
 
 .menu, .menu1 {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
 .current {
@@ -154,7 +154,7 @@ main {
     font-family: Bebas Neue;
     font-size: 4rem;
     color: #F2F2F2;
-    margin-top: 20%;
+    margin-top: 245px;
     text-shadow: 2px 2px #3F402D;
     top: 1em;
     z-index: 9;
@@ -230,54 +230,7 @@ width: 89vw;
 @media  (max-width:600px) {
 
     
-/*hamburger menu*/
-    
 
-    
-.mobile-menu { 
-    display: none;
-    background-color: #F2F2F2;
-    font-size: 2em;
-    width: 7em;
-    height: 7em;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border: solid 1px #3F402D;
-    overflow-y: hidden;
-}
-
-li {
-    padding-bottom: 10px;
-}
-
-.mobile-menu-content {
-    height: 7em;
-    text-decoration: none;
-    
-}
-
-#hamburger-menu{
-    display:none;
-} 
-
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
-
-.hamburger {
-    background-color: #D9D9D9;
-    width: 2em;
-    color: #3F402D;
-    padding-left: 5px;
-    z-index: 50;
-    margin-left: 1.7em;
-}
-   
-
-    
-    
-/*end of hamburger menu*/
 
     .index { 
         background: url(/images/m_yellowjacketbeach1.png);
@@ -302,18 +255,70 @@ li {
     border-radius: 25px;
     width: 200px;
     height: 50px;
-    padding-top: 10px;
-    padding: 8px 10px 5px 10px;
+    padding: 15px 8px 5px 8px;
     z-index: 8;
-    position: relative;
-    top: 11em;
+    position: absolute;
+    top: 17em;
     left: 6em;
    }
 
     .hometext {
         font-size: 2.5em;
-        top: 5.2em;
+        top: 60px;
+        z-index: 2;
     }
 
+
+
+/*hamburger menu*/
+    
+  .mobile-menu { 
+    display: none;
+    background-color: #F2F2F2;
+    font-size: 2em;
+    width: 6em;
+    height: 7em;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #3F402D;
+    
+}
+
+.mobile-menu-content {
+    height: 7em;
+    text-decoration: none;
+    color: #3F402D;
+    display: block;
+    z-index: 60;    
+}
+
+#hamburger-menu{
+    display:none;
+    
+} 
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+       
+}
+
+
+.hamburger {
+    background-color: #D9D9D9;
+    width: 2em;
+    color: #3F402D;
+    padding-left: 5px;
+    z-index: 20;
+    margin-left: 1.7em;
+    
+}
    
+/*end of hamburger menu*/
 }
