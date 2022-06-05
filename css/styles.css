@@ -74,6 +74,7 @@ header {
 .rainydays {
     display: block;
     justify-content: center;
+    z-index: 2;
 }
 
 .border {
