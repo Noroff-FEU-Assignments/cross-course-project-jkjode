@@ -4,29 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Rainydays - About</title>
+    <script
+      src="https://kit.fontawesome.com/cdbde72ef5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Rainydays - Home</title>
   </head>
+  <body>
+  <header id="header">
+    <a href="index.html" class="rainydays"></a>
+   
+    
+    </header>
 
+  <nav class="browser-nav">
+    <ul>
+      <a href="index.html" class="nav menu current">Home</a>
+      <a href="jackets.html" class="nav menu1">Jackets</a>
+      <a href="about.html" class="nav menu1">About</a>
+      <a href="contact.html" class="nav menu1">Contact</a>
+    </ul>    
+  </nav>
   
-    <body>
-      <header>
-        <a href="index.html" class="Rainydays">
-        <img src="/images/rainydays_logo.png" alt="Rainydays logo" class="logo" /></a>
-        <img src="/images/crossborder.png" alt="border of crosses" class="border" />
-        
-        <nav>
-          <ul>
-            <button><a href="index.html" class="menu">Home</button>
-            <button><a href="jackets.html" class="menu">Jackets</button>
-            <button><a href="about.html" class="menu">About</button>
-            <button><a href="contact.html" class="menu">Contact</button>
-          </ul>    
-          
-        </nav>
-      </header>
-      <div><img src="/images/rainyday.jpg" alt="Waterfall in fog" class="waterfall"></div>
-      <Section>
+     <main>
+<!---navbar for mobile--->
+<div class="hamburger">
+  <label for="hamburger-menu"><i class="fa-solid fa-bars fa-2x"></i></i></label>
+  <input type="checkbox" id="hamburger-menu" />
+<nav class="mobile-menu">
+  <ul class="mobile-menu-content">
+    <a href="index.html">Home</a>
+    <a href="jackets.html">Jackets</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </ul>
+</nav>
+</div>
+<!---end of navbar for mobile-->
+<div><img src="/images/rainyday.jpg" alt="Waterfall in fog" class="waterfall"></div>
+      <Section class="section-about">
         <H1>ABOUT RAINYDAYS</H1>
         <H2>Pushing the comfort zone</H2>
         <h3>Rainydays was established in 1492.</h3>
@@ -52,7 +69,7 @@
           
           <h3>Have a Rainydays!</h3>
       </Section>
-      <footer> &copy; Copyright <a href="about.html" class="footermenu">About us</footer>
-    </body>
-  
+    </main>
+    <footer> &copy; Copyright <a href="about.html" class="footermenu">About us</footer>
+  </body>
 </html>
