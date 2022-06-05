@@ -192,7 +192,8 @@ main {
     z-index: 8;
     position: relative;
     top: 12em;
-    left: 26em;
+    left: 50%;
+    transform: translate(-50%);
     
 }
 
@@ -231,6 +232,7 @@ width: 89vw;
         margin-left: 5%;
         margin-right: 5%;
         
+        
     }
 
    .hamburger {
@@ -257,7 +259,7 @@ width: 89vw;
         width: 89vw;
         margin-left: 5%;
         margin-right: 5%;
-        
+    
     }
     
    .browser-nav {
@@ -279,7 +281,8 @@ width: 89vw;
     z-index: 8;
     position: absolute;
     top: 17em;
-    left: 6em;
+    left: 50%;
+    transform: translate(-50%);
    }
 
    .hometext {
