@@ -2,16 +2,16 @@
 Global Styling - 17
 Fonts - 19 
 Header - 43
-Navigation - 104 
-Index image - 148 
-Footer - 201
-Browser styling - 222
-Mobile styling - 247
-Hamburger menu - 301
+Navigation - 107 
+Index image - 151 
+Footer - 205
+Browser styling - 226
+Mobile styling - 252
+Hamburger menu - 307
 
-Jackets page - 357
-About page - 371
-Contact page - 397
+Jackets page - 362
+About page - 377
+Contact page - 403
 */
 
 /*Global styling*/
@@ -75,6 +75,8 @@ header {
     display: block;
     justify-content: center;
     z-index: 2;
+    width: 90vw;
+    height: 190px;
 }
 
 .border {
