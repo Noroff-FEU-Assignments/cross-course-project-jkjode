@@ -282,6 +282,7 @@ width: 89vw;
     padding-top: 5px;
     padding-bottom: 10px;
     overflow-y: hidden;
+    position: absolute;
     
 }
 
