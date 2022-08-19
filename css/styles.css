@@ -18,9 +18,9 @@ Contact page - 403
 
 @font-face {
     font-family: Bebas Neue;
-    src: url(/fonts/Bebas\ Neue/);
+    src: url(/fonts/Bebas\ Neue/) format("truetype");
     font-family: Gentium;
-    src: url(/fonts/Gentium/)
+    src: url(/fonts/Gentium/) format("truetype");
 }
 
 body {
@@ -210,6 +210,7 @@ color: #F2F2F2;
 text-align: center;
 height: 25px;
 padding-top: 10px;
+margin-top: 40px;
 margin-left: 5%;
 margin-right: 5%;
 width: 89vw;
@@ -361,35 +362,149 @@ a {
 }
 
 /*JACKETS*/
-.productbox {
+
+.product-section {
+    width: 89vw;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid green;
     
+}
+
+.productbox {
     background-color: #F2F2F2;
-    width: 550px;
-    margin-bottom: 50px;
-
+    align-self: start;
+    justify-self: center;
+    width: 350px;
+    height: 400px;
+    z-index: 5;
 }
 
-.product {
-    width: 500px;
-    display: column;
+.product1, .product2, .product3, .product4, .product5, .product6 {
+    width: 300px;
+    height: 350px;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    }
+
+/*CONTACT*/
+
+/* Style inputs with type="text", select elements and textareas */
+
+.contactlayout {
+    width: 89vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+/*     grid-area: auto, 1fr 1fr;
+    grid-area: "contactform contactinfo";
+ */}
+
+h1 {
+    font-family: Bebas Neue;
+    font-size: 2.25em;
 }
+
+h2 {
+    font-family: Bebas Neue;
+    margin-top: 1vw;
+    font-size: 1.75em;
+    }
+
+.paragraphtext {
+    font-family: Gentium;
+    font-size: 1.25em;
+    margin-top: 1vw;
+    text-align: left;
+    display: grid 1fr;
+}
+
+.contactinfo {
+    width: 35vw;
+    border: 1px solid blue;
+/*     margin-top: ;
+    margin-left: 50vw;
+    position: right;
+    display: grid 1fr;
+ */
+}
+
+.contactform {
+    display: grid, 1fr;
+    margin-top: 11vw;
+    width: 35vw;
+    }
+
+input[type=text], select, textarea {
+    width: 25vw; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid #8C7F65; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-left: 15vw;
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    display: grid;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #F2F2F2;
+    color: #3F402D;
+    padding: 12px 20px;
+    border: 2px solid #3F402D;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Bebas Neue;
+    font-size: 1.25em;
+    margin-left: 15vw;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #3F402D;
+    color: #F2F2F2;
+    
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
 /*ABOUT*/
+
+.sectionabout {
+    width: 89vw;
+    height: 80vw;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid green;
+}
 
 .waterfall {
     width: 550px;
     float: left;
-    margin-top: 5vh;
-    margin-left: 5vw;
+    margin-top: 12vh;
+    margin-left: 10vw;
+    border: 1px solid blue;
 }
 
-.section-about {
+.abouttxt {
     font-style: Gentium;
     width: 40vw;
-    margin-right: 15vw;
+/*     margin-right: 15vw;
     margin-top: 3vh;
-    color: #3F402D;
+ */    color: #3F402D;
     float: right;
+    border: 1px solid red;
 }
 
 @media (max-width:600px) {
@@ -404,7 +519,7 @@ a {
 
 p { 
     font-size: Bebas Neue;
-    font-size: x-large;
-    text-align: center;
-    margin-top: 20vh;
-}
+    font-size: large;
+    text-align: left;
+/*     margin-top: 20vh;
+ */}
