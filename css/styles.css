@@ -392,6 +392,35 @@ a {
     z-index: 1;
     }
 
+.jacketbox {
+    background-color: #F2F2F2;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    padding: 2%;
+    width: 35vw;
+    height: 90vh;
+    border: 1px solid greenyellow;
+}
+
+.jacket-specific {
+    margin-top: 10vh;
+    width: 36vw;
+    height: 40vh;
+    border: 1px solid lightblue;
+}
+
+   .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
+    margin-top: 2vh;
+    width: 35vw;
+    border: 1px solid red;
+    
+}
+
+.backbutton {
+    align-self: right;
+    color: #3F402D;
+}
+
 /*CONTACT*/
 
 /* Style inputs with type="text", select elements and textareas */
