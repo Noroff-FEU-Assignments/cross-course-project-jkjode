@@ -429,7 +429,7 @@ a {
     width: 89vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid red;
+    border: 1px solid darkred;
 /*     grid-area: auto, 1fr 1fr;
     grid-area: "contactform contactinfo";
  */}
@@ -457,9 +457,16 @@ h2 {
 }
 
 .contactinfo {
-    width: 35vw;
+    font-style: Gentium;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    color: #3F402D;
+    float: right;
+    border: 1px solid red;
+/*     width: 35vw;
     border: 1px solid blue;
-/*     margin-top: ;
+ *//*     margin-top: ;
     margin-left: 50vw;
     position: right;
     display: grid 1fr;
@@ -468,8 +475,9 @@ h2 {
 
 .contactform {
     display: grid, 1fr;
-    margin-top: 11vw;
+    margin-top: 6vw;
     width: 35vw;
+    border: 1px solid orange;
     }
 
 input[type=text], select, textarea {
@@ -517,6 +525,7 @@ input[type=text], select, textarea {
 .sectionabout {
     width: 89vw;
     height: 80vw;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px solid green;
 }
@@ -532,10 +541,10 @@ input[type=text], select, textarea {
 .abouttxt {
     font-style: Gentium;
     width: 40vw;
-/*     margin-right: 15vw;
-    margin-top: 3vh;
- */    color: #3F402D;
+    color: #3F402D;
     float: right;
+    margin-left: 5vw;
+    margin-top: 2vh;
     border: 1px solid red;
 }
 
