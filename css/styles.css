@@ -369,7 +369,7 @@ a {
     height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-row-gap: 120px;
     justify-items: center;
     align-items: center;
     border: 1px solid green;
@@ -385,7 +385,26 @@ a {
     width: 350px;
     height: 400px;
     z-index: 5;
+    padding-bottom: 3vh;
     border: 1px solid pink;
+}
+
+.nametag {
+/*     background-color: #F2F2F2;
+ */    font-family: Bebas Neue;
+    font-size: smaller;
+    width: 15vw;
+    height: 8vh;
+    padding: 0vh 0vh 2vh 3vh;
+/*     border: 2px solid #8C7F65;
+ */    margin-left: -1vw;
+    border-radius: 2%;
+        
+}
+
+.pricetag {
+    font-family: Gentium;
+    font-size: larger;
 }
 
 .product1, .product2, .product3, .product4, .product5, .product6 {
@@ -394,6 +413,8 @@ a {
     align-content: center;
     justify-content: center;
     z-index: 1;
+    margin-top: 2vh;
+    margin-left: 2.5vh;
     }
 
 @media (max-width:650px) {
