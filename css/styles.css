@@ -422,7 +422,7 @@ a {
     margin-left: 10vw;
     padding: 5%;
     width: 27vw;
-    height: 45vh;
+    height: fit-content;     
     align-content: center;
     border: 1px solid greenyellow;
     }
