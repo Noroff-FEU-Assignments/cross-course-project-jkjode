@@ -470,14 +470,16 @@ a {
 
 
 .buynow {
-    font: Bebas Neue;
-    font-size: large;
+    font-family: Bebas Neue;
+    font-size: x-large ;
     width: 10vw;
     height: 3vh;
     border-radius: 5%;
     background-color: #F2F2F2;
     color: #3F402D;
     border: 2px solid #3F402D;
+    margin-top: 8vh;
+    margin-left: 10vh;
     
 }
  */
@@ -524,6 +526,68 @@ a {
     }
 }
 
+/*JACKET CHECKOUT*/
+
+.jacket-checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkoutform {
+    display: grid, 1fr;
+    margin-top: 6vw;
+    width: 20vw;
+    border: 1px solid orange;
+
+}
+
+.jacketcheckout {
+    background-color: #F2F2F2;
+    margin-top: 11vh;
+    margin-left: 15vw;
+    padding: 5%;
+    width: 15vw;
+    height: fit-content;     
+    align-content: center;
+    border: 1px solid greenyellow;
+}
+
+.jacketbuy {
+    margin-top: 2vh;
+    width: 15vw;
+    border: 1px solid red;
+}
+
+.checklayout {
+    width: 35vw;
+    margin-left: -15vw;
+    
+}
+
+.checktxt {
+    width: 35vw;
+    color: #3F402D;
+    margin-left: -1.5vw;
+    border: 1px solid purple;
+    
+}
+
+@media (max-screen:650px) {
+
+.jacketcheckout {
+/*     display: grid;
+ */    grid-template-columns: 1fr;
+}
+
+.jacket-checkout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+
 
 /*CONTACT*/
 
@@ -547,6 +611,7 @@ h1 {
 h2 {
     font-family: Bebas Neue;
     margin-top: 1vw;
+    padding-bottom: 3vh;
     font-size: 1.75em;
     color: #3F402D;
     }

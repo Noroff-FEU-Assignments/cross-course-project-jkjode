@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>Rainydays - The Limitless Jacket</title>
+    <title>Rainydays - Checkout</title>
   </head>
   <body>
   <header id="header">
@@ -40,21 +40,45 @@
 </nav>
 </div>
 <!---end of navbar for mobile-->
-<section class="jacket-specific">
-<div class="jacketbox">
-  <img src="/images/products/RainyDays_Jacket4.png" alt="The Limitless Jacket" class="jacket3"></img>
+<section class="jacket-checkout">
+<div class="jacketcheckout">
+  <img src="/images/products/RainyDays_Jacket1.png" alt="The Strong Jacket" class="jacketbuy"></img>
 </div>
-<div class="jackettxt">
-<h1>THE LIMITLESS JACKET</h1>
-<h2>About the Limitless Jacket</h2>
-<p>Simply the best jacket of all times.</p>
-<p>You really should buy this, no questions asked.</p>
-<p>The only limit you will have with this jackets is your own body. But even you will be more fit, agile and strong using this!</p>
-<p>We work everyday to make our Products better, warmer, dryer, more comfortable and breathable.</p> 
-<p>This jacket cools you down when hot due to the patented cooling system called Rainydays Chill and heat you in cool weathers with patent pending Rainydays Heat functionality.</p>
-<button class="buynow"> <a href="/checkout.html">Buy Now</button>
+<div class="checktxt">
+<h1>THE STRONG JACKET</h1>
+<h2>Has been added to your cart</h2>
+<p>Please fill out payment and shipping</p>
+<div class="checklayout">
+    <div class="checkoutform">
+      <form action="action_page.php">
+    
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+    
+        <label for="street"></label>
+        <input type="text" id="email" name="street" placeholder="street..">
+        
+        <label for="p.box"></label>
+        <input type="text" id="p.box" name="p.box" placeholder="p.box..">
+
+        <label for="cuntry"></label>
+        <input type="text" id="country" name="country" placeholder="country..">
+        
+        <label for="pay"></label>
+        <select id="country" name="country">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Monopolymoney">Monopolymoney</option>
+        </select>
+    
+           
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+    
 </div>
-<h2 class="backbutton"> <a href="jackets.html">Back to selection</h2>
 </section>   
     </main>
     <footer> &copy; Copyright <a href="about.html" class="footermenu">About us</footer>
