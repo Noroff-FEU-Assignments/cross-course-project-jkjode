@@ -359,6 +359,7 @@ a {
 }
    
 /*end of hamburger menu*/
+
 }
 
 /*JACKETS*/
@@ -379,9 +380,12 @@ a {
     background-color: #F2F2F2;
     align-self: start;
     justify-self: center;
+    align-content: center;
+    justify-content: center;
     width: 350px;
     height: 400px;
     z-index: 5;
+    border: 1px solid pink;
 }
 
 .product1, .product2, .product3, .product4, .product5, .product6 {
@@ -391,6 +395,14 @@ a {
     justify-content: center;
     z-index: 1;
     }
+
+@media (max-width:650px) {
+    .product-section {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+}
 
     /* JACKET SPECIFIC */
 
@@ -408,9 +420,10 @@ a {
     background-color: #F2F2F2;
     margin-top: 11vh;
     margin-left: 10vw;
-    padding: 2%;
+    padding: 5%;
     width: 27vw;
-    height: 90vh;
+    height: 45vh;
+    align-content: center;
     border: 1px solid greenyellow;
     }
 
@@ -433,7 +446,7 @@ a {
 .buynow {
     font: Bebas Neue;
     font-size: large;
-    width: 5vw;
+    width: 10vw;
     height: 3vh;
     border-radius: 5%;
     background-color: #F2F2F2;
@@ -443,9 +456,48 @@ a {
 }
  */
 .backbutton {
+    font-family: Bebas Neue;
     align-self: right;
     color: #3F402D;
 }
+
+@media (max-width:700px) {
+    
+    .jacket-specific {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+     }
+
+    .jacketbox {
+        width: 65vw;
+        height: auto;
+        margin-top: 1vh;
+    }
+
+    .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
+        width: 65vw;
+    }
+
+    .jackettxt {
+        width: auto;
+        height: fit-content;
+    }
+
+    .buynow {
+        font-family: Bebas Neue;
+        font-size: x-large;
+        width: 20vw;
+        height: 5vh;
+        margin-top: 3vh;
+        margin-left: 30vw;
+    }
+
+    .backbutton {
+        margin-top: 3vh;
+    }
+}
+
 
 /*CONTACT*/
 
@@ -546,6 +598,25 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+@media (max-width:650px){
+    .contactlayout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contactform {
+        width: 85vw;
+    }
+
+    input[type=text], select, textarea {
+        width: 60vw;
+    }
+
+    .contactinfo {
+        width: 80vw;
+    }
+}
+
 /*ABOUT*/
 
 .sectionabout {
@@ -576,10 +647,20 @@ input[type=text], select, textarea {
 
 @media (max-width:600px) {
     .waterfall {
-        width: 50vw;
+        width: 60vw;
+        margin-top: 3vh;
+        margin-left: 15vw;
         align-content: space-around;
     }
     
+    .sectionabout {
+        grid-template-columns: 1fr;
+        width: 80vw;
+    }
+
+    .abouttxt {
+        width: 80vw;
+    }
 }
 
 /*CONTACT*/
