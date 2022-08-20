@@ -424,7 +424,7 @@ a {
     }
 
     .nametag {
-        width: 35vw;
+        width: 50vw;
         margin-top: 3vh;
         margin-left: -2vh;
     }
@@ -515,10 +515,10 @@ a {
     .buynow {
         font-family: Bebas Neue;
         font-size: x-large;
-        width: 20vw;
+        width: 30vw;
         height: 5vh;
         margin-top: 3vh;
-        margin-left: 30vw;
+        margin-left: 25vw;
     }
 
     .backbutton {
@@ -552,6 +552,9 @@ a {
     border: 1px solid greenyellow;
 }
 
+.buynow {
+    width: 30vw;
+}
 .jacketbuy {
     margin-top: 2vh;
     width: 15vw;
