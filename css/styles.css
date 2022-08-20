@@ -395,7 +395,7 @@ a {
     /* JACKET SPECIFIC */
 
 .jacket-specific {
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 89vw;
     height: 100vh;
     display: grid;
@@ -406,10 +406,10 @@ a {
 
 .jacketbox {
     background-color: #F2F2F2;
-    margin-top: 2vh;
+    margin-top: 11vh;
     margin-left: 10vw;
     padding: 2%;
-    width: 35vw;
+    width: 27vw;
     height: 90vh;
     border: 1px solid greenyellow;
     }
@@ -417,7 +417,7 @@ a {
 
 .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
     margin-top: 2vh;
-    width: 35vw;
+    width: 27vw;
     border: 1px solid red;
     }
 
@@ -425,7 +425,6 @@ a {
     width: 35vw;
     color: #3F402D;
     margin-left: 5vw;
-    margin-top: 2vh;
     border: 1px solid purple;
     
 }
@@ -557,7 +556,7 @@ input[type=text], select, textarea {
 }
 
 .waterfall {
-    width: 550px;
+    width: 29vw;
     float: left;
     margin-top: 12vh;
     margin-left: 10vw;
