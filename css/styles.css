@@ -20,7 +20,7 @@ Contact page - 403
     font-family: Bebas Neue;
     src: url(/fonts/Bebas\ Neue/) format("truetype");
     font-family: Gentium;
-    src: url(/fonts/Gentium/) format("truetype");
+    src: url(/fonts/Gentium/GentiumBasic-Regular.ttf) format("truetype");
 }
 
 body {
@@ -429,6 +429,7 @@ a {
     
 }
 
+
 .buynow {
     font: Bebas Neue;
     font-size: large;
@@ -440,7 +441,7 @@ a {
     border: 2px solid #3F402D;
     
 }
-
+ */
 .backbutton {
     align-self: right;
     color: #3F402D;
@@ -472,7 +473,7 @@ h2 {
     color: #3F402D;
     }
 
-.paragraphtext {
+p, .paragraphtext {
     font-family: Gentium;
     font-size: 1.25em;
     margin-top: 1vw;
