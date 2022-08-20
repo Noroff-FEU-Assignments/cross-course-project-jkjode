@@ -404,7 +404,7 @@ a {
 
 .pricetag {
     font-family: Gentium;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .product1, .product2, .product3, .product4, .product5, .product6 {
@@ -423,6 +423,11 @@ a {
         height: auto;
     }
 
+    .nametag {
+        width: 35vw;
+        margin-top: 3vh;
+        margin-left: -2vh;
+    }
 }
 
     /* JACKET SPECIFIC */
