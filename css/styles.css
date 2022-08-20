@@ -392,6 +392,18 @@ a {
     z-index: 1;
     }
 
+    /* JACKET SPECIFIC */
+
+.jacket-specific {
+    margin-top: 10vh;
+    width: 89vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid lightblue;
+    }
+    
+
 .jacketbox {
     background-color: #F2F2F2;
     margin-top: 2vh;
@@ -400,19 +412,33 @@ a {
     width: 35vw;
     height: 90vh;
     border: 1px solid greenyellow;
-}
+    }
 
-.jacket-specific {
-    margin-top: 10vh;
-    width: 36vw;
-    height: 40vh;
-    border: 1px solid lightblue;
-}
 
-   .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
+.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
     margin-top: 2vh;
     width: 35vw;
     border: 1px solid red;
+    }
+
+.jackettxt {
+    width: 35vw;
+    color: #3F402D;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    border: 1px solid purple;
+    
+}
+
+.buynow {
+    font: Bebas Neue;
+    font-size: large;
+    width: 5vw;
+    height: 3vh;
+    border-radius: 5%;
+    background-color: #F2F2F2;
+    color: #3F402D;
+    border: 2px solid #3F402D;
     
 }
 
