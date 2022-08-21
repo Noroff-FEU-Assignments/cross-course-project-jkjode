@@ -1,17 +1,20 @@
 /*Content
-Global Styling - 17
-Fonts - 19 
-Header - 43
-Navigation - 107 
-Index image - 151 
-Footer - 205
-Browser styling - 226
-Mobile styling - 252
-Hamburger menu - 307
-
-Jackets page - 362
-About page - 377
-Contact page - 403
+Global Styling - 20
+Fonts - 22 
+Header - 46
+Navigation - 108 
+Index image - 152 
+Footer - 203
+Browser styling - 224
+Mobile styling - 247
+Hamburger menu - 298
+Jackets page - 351
+Jacket specific - 415
+Jacket checkout - 508
+Checkout Jacket mobile - 554
+Contact - 589
+Contact Mobile - 676
+About page - 679
 */
 
 /*Global styling*/
@@ -139,14 +142,13 @@ ul {
 .menu, .menu1 {
     margin-left: 3%;
     margin-right: 3%;
-  }
+    }
 
 .current {
     background-color: #3F402D;
     color: #F2F2F2;
     border: solid #3F402D 1px;
-    
-}
+    }
 
 
 /*index image*/
@@ -155,9 +157,7 @@ ul {
     width: 90vw;
     z-index: 1;
     position: absolute;
-    
-}
-
+    }
 
 main {
     display: block;
@@ -167,7 +167,7 @@ main {
     height: 81vh;
     z-index: 1;
     overflow-x: hidden;
-}
+    }
 
 .hometext {
     font-family: Bebas Neue;
@@ -179,7 +179,7 @@ main {
     background-size: contain;
     left: 50%;
     transform: translate(-50%);
-}
+    }
 
 .cta {
     font-family: Bebas Neue;
@@ -198,31 +198,29 @@ main {
     top: 12em;
     left: 50%;
     transform: translate(-50%);
-    
-}
+    }
 
 
 
 /*Footer*/
 footer {
-background-color: #3F402D;
-font-family: Gentium;
-color: #F2F2F2;
-text-align: center;
-height: 25px;
-padding-top: 10px;
-margin-top: 40px;
-margin-left: 5%;
-margin-right: 5%;
-width: 89vw;
-
-}
+    background-color: #3F402D;
+    font-family: Gentium;
+    color: #F2F2F2;
+    text-align: center;
+    height: 25px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 89vw;
+    }
 
 .footermenu {
     text-decoration: none;
     color: #F2F2F2;
     margin-left: 50px;
-}
+    }
 
 
 /*Browser styling*/
@@ -236,27 +234,21 @@ width: 89vw;
         right: 50%;
         margin-left: 5%;
         margin-right: 5%;
-        
-        
-    }
+        }
 
    .hamburger {
-       display: none;
-   }
+        display: none;
+        }
     
    .m_hometext {
-       display: none;
-   }
-
-}
+        display: none;
+        }
+    }
 
 
 /*Mobile styling*/
 
 @media  (max-width:600px) {
-
-    
-
 
     .index { 
         background: url(/images/m_yellowjacketbeach1.png);
@@ -264,35 +256,34 @@ width: 89vw;
         width: 89vw;
         margin-left: 5%;
         margin-right: 5%;
-    
-    }
+        }
     
    .browser-nav {
-       display: none;
-   }
+        display: none;
+        }
 
  
    .cta {
-    font-family: Bebas Neue;
-    text-decoration: none;
-    font-size: 2rem;
-    text-align: center;
-    color: #F2F2F2;
-    background-color: #850000F5;
-    border-radius: 25px;
-    width: 200px;
-    height: 50px;
-    padding: 15px 8px 5px 8px;
-    z-index: 8;
-    position: absolute;
-    top: 17em;
-    left: 50%;
-    transform: translate(-50%);
-   }
+        font-family: Bebas Neue;
+        text-decoration: none;
+        font-size: 2rem;
+        text-align: center;
+        color: #F2F2F2;
+        background-color: #850000F5;
+        border-radius: 25px;
+        width: 200px;
+        height: 50px;
+        padding: 15px 8px 5px 8px;
+        z-index: 8;
+        position: absolute;
+        top: 17em;
+        left: 50%;
+        transform: translate(-50%);
+        }
 
    .hometext {
-       display: none;
-   }
+        display: none;
+        }
 
     .m_hometext {
         font-family: Bebas Neue;
@@ -302,66 +293,62 @@ width: 89vw;
         top: 4.5em;
         text-align: center;
         z-index: 2;
-    }
+        }
 
 
 
 /*hamburger menu*/
     
-  .mobile-menu { 
-    display: none;
-    background-color: #F2F2F2;
-    font-size: 2em;
-    width: 6em;
-    height: 7em;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    overflow-y: hidden;
-    position: absolute;
-    z-index: 999;
-    
-}
+    .mobile-menu { 
+        display: none;
+        background-color: #F2F2F2;
+        font-size: 2em;
+        width: 6em;
+        height: 7em;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+        position: absolute;
+        z-index: 999;
+        }
 
-a {
-    text-decoration: none;
-    color: #3F402D;
-    
-}
+    a {
+        text-decoration: none;
+        color: #3F402D;
+        }
 
-.mobile-menu-content {
-    height: 7em;
-    text-decoration: none;
-    color: #3F402D;
-    display: block;
-    z-index: 999;    
-}
+    .mobile-menu-content {
+        height: 7em;
+        text-decoration: none;
+        color: #3F402D;
+        display: block;
+        z-index: 999;    
+        }
 
-#hamburger-menu{
-    display:none;
-    
-} 
+    #hamburger-menu{
+        display:none;
+        } 
 
-#hamburger-menu:checked ~ nav {
-    display: block;
-       
-}
+    #hamburger-menu:checked ~ nav {
+        display: block;
+        }
 
 
-.hamburger {
-    background-color: #D9D9D9;
-    width: 2em;
-    color: #3F402D;
-    padding-left: 5px;
-    z-index: 20;
-    margin-left: 1.7em;
-    
-}
+    .hamburger {
+        background-color: #D9D9D9;
+        width: 2em;
+        color: #3F402D;
+        padding-left: 5px;
+        z-index: 20;
+        margin-left: 1.7em;
+        }
    
+}
+
 /*end of hamburger menu*/
 
-}
 
 /*JACKETS*/
 
@@ -373,9 +360,7 @@ a {
     grid-row-gap: 120px;
     justify-items: center;
     align-items: center;
-    border: 1px solid green;
-    
-}
+    }
 
 .productbox {
     background-color: #F2F2F2;
@@ -387,26 +372,22 @@ a {
     height: 400px;
     z-index: 5;
     padding-bottom: 3vh;
-    border: 1px solid pink;
-}
+    }
 
 .nametag {
-/*     background-color: #F2F2F2;
- */    font-family: Bebas Neue;
+    font-family: Bebas Neue;
     font-size: smaller;
     width: 15vw;
     height: 8vh;
     padding: 0vh 0vh 2vh 3vh;
-/*     border: 2px solid #8C7F65;
- */    margin-left: -1vw;
+    margin-left: -1vw;
     border-radius: 2%;
-        
-}
+    }
 
 .pricetag {
     font-family: Gentium;
     font-size: xx-large;
-}
+    }
 
 .product1, .product2, .product3, .product4, .product5, .product6 {
     width: 300px;
@@ -422,16 +403,16 @@ a {
     .product-section {
         grid-template-columns: 1fr;
         height: auto;
-    }
+        }
 
     .nametag {
         width: 50vw;
         margin-top: 3vh;
         margin-left: -2vh;
-    }
+        }
 }
 
-    /* JACKET SPECIFIC */
+/* JACKET SPECIFIC */
 
 .jacket-specific {
     margin-top: 5vh;
@@ -439,7 +420,6 @@ a {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid lightblue;
     }
     
 
@@ -451,24 +431,19 @@ a {
     width: 27vw;
     height: fit-content;     
     align-content: center;
-    border: 1px solid greenyellow;
     }
 
 
 .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
     margin-top: 2vh;
     width: 27vw;
-    border: 1px solid red;
     }
 
 .jackettxt {
     width: 35vw;
     color: #3F402D;
     margin-left: 5vw;
-    border: 1px solid purple;
-    
-}
-
+    }
 
 .buynow {
     font-family: Bebas Neue;
@@ -481,14 +456,13 @@ a {
     border: 2px solid #3F402D;
     margin-top: 8vh;
     margin-left: 10vh;
-    
-}
- */
+    }
+ 
 .backbutton {
     font-family: Bebas Neue;
     align-self: right;
     color: #3F402D;
-}
+    }
 
 @media (max-width:700px) {
     
@@ -496,22 +470,22 @@ a {
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
-     }
+        }
 
     .jacketbox {
         width: 65vw;
         height: auto;
         margin-top: 1vh;
-    }
+        }
 
     .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
         width: 65vw;
-    }
+        }
 
     .jackettxt {
         width: auto;
         height: fit-content;
-    }
+        }
 
     .buynow {
         font-family: Bebas Neue;
@@ -520,11 +494,11 @@ a {
         height: 5vh;
         margin-top: 3vh;
         margin-left: 25vw;
-    }
+        }
 
     .backbutton {
         margin-top: 3vh;
-    }
+        }
 }
 
 /*JACKET CHECKOUT*/
@@ -532,17 +506,13 @@ a {
 .jacket-checkout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid red;
-
-}
+    }
 
 .checkoutform {
     display: grid, 1fr;
     margin-top: 6vw;
     width: 20vw;
-    border: 1px solid orange;
-
-}
+    }
 
 .jacketcheckout {
     background-color: #F2F2F2;
@@ -552,81 +522,71 @@ a {
     width: 15vw;
     height: fit-content;     
     align-content: center;
-    border: 1px solid greenyellow;
-}
+    }
 
 
 .jacketbuy {
     margin-top: 2vh;
     width: 15vw;
-    border: 1px solid red;
-}
+    }
 
 .checklayout {
     width: 35vw;
     margin-left: -15vw;
-    
-}
+    }
 
 .checktxt {
     width: 35vw;
     color: #3F402D;
     margin-left: -1.5vw;
-    border: 1px solid purple;
-    
-}
+    }
+
 /*Checkout Jacket mobile*/
 
 @media (max-width:700px) {
 
-.jacket-checkout {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 2px solid darkblue;
-    }
+    .jacket-checkout {
+        display: grid;
+        grid-template-columns: 1fr;
+        }
 
-.jacketcheckout {
-    width: 35vw;
-    margin-left: 24vw;
-    margin-top: 5vh;
-    }
+    .jacketcheckout {
+        width: 35vw;
+        margin-left: 24vw;
+        margin-top: 5vh;
+        }
 
-.jacketbuy {
-    width: 34vw;
-}    
+    .jacketbuy {
+        width: 34vw;
+        }    
 
-.checktxt {
-    width: 80vw;
-    margin-left: 5vw;
-    }
+    .checktxt {
+        width: 80vw;
+        margin-left: 5vw;
+        }
 
-.checklayout {
-    width: 35vw;
-    margin-left: -5vw;
-    }
+    .checklayout {
+        width: 35vw;
+        margin-left: -5vw;
+        }
 
 }
 
-
+/* End of Checkout */
 
 /*CONTACT*/
-
-/* Style inputs with type="text", select elements and textareas */
 
 .contactlayout {
     width: 89vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid darkred;
-/*     grid-area: auto, 1fr 1fr;
-    grid-area: "contactform contactinfo";
- */}
+    }
 
 h1 {
     font-family: Bebas Neue;
     font-size: 2.25em;
     color: #3F402D;
-}
+    }
 
 h2 {
     font-family: Bebas Neue;
@@ -636,14 +596,21 @@ h2 {
     color: #3F402D;
     }
 
-p, .paragraphtext {
+p { 
+    font-size: Bebas Neue;
+    font-size: large;
+    text-align: left;
+    }
+    
+
+.paragraphtext {
     font-family: Gentium;
     font-size: 1.25em;
     margin-top: 1vw;
     text-align: left;
     display: grid 1fr;
     color: #3F402D;
-}
+    }
 
 .contactinfo {
     font-style: Gentium;
@@ -652,38 +619,28 @@ p, .paragraphtext {
     margin-top: 2vh;
     color: #3F402D;
     float: right;
-    border: 1px solid red;
-/*     width: 35vw;
-    border: 1px solid blue;
- *//*     margin-top: ;
-    margin-left: 50vw;
-    position: right;
-    display: grid 1fr;
- */
-}
+    }
 
 .contactform {
     display: grid, 1fr;
     margin-top: 6vw;
     width: 35vw;
-    border: 1px solid orange;
     }
 
 input[type=text], select, textarea {
-    width: 25vw; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 2px solid #8C7F65; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
+    width: 25vw; 
+    padding: 12px; 
+    border: 2px solid #8C7F65; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
     margin-left: 15vw;
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    margin-bottom: 16px; 
+    resize: vertical; 
     display: grid;
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+    }
+   
+input[type=submit] {
     background-color: #F2F2F2;
     color: #3F402D;
     padding: 12px 20px;
@@ -693,58 +650,58 @@ input[type=text], select, textarea {
     font-family: Bebas Neue;
     font-size: 1.25em;
     margin-left: 15vw;
-  }
+    }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  /* Submit on hover */
   input[type=submit]:hover {
     background-color: #3F402D;
     color: #F2F2F2;
-    
-  }
+    }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+    }
+
+/* Contact mobile */
 
 @media (max-width:650px){
     .contactlayout {
         display: grid;
         grid-template-columns: 1fr;
-    }
+        }
 
     .contactform {
         width: 85vw;
-    }
+        }
 
     input[type=text], select, textarea {
         width: 60vw;
-    }
+        }
 
     .contactinfo {
         width: 80vw;
-    }
+        }
 }
 
-/*ABOUT*/
+/* End of Contact */
+
+/* ABOUT */
 
 .sectionabout {
     width: 89vw;
     height: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid green;
-}
+    }
 
 .waterfall {
     width: 29vw;
     float: left;
     margin-top: 12vh;
     margin-left: 10vw;
-    border: 1px solid blue;
-}
+    }
 
 .abouttxt {
     font-style: Gentium;
@@ -753,8 +710,7 @@ input[type=text], select, textarea {
     float: right;
     margin-left: 5vw;
     margin-top: 2vh;
-    border: 1px solid red;
-}
+    }
 
 @media (max-width:600px) {
     .waterfall {
@@ -762,23 +718,16 @@ input[type=text], select, textarea {
         margin-top: 3vh;
         margin-left: 15vw;
         align-content: space-around;
-    }
+        }
     
     .sectionabout {
         grid-template-columns: 1fr;
         width: 80vw;
-    }
+        }
 
     .abouttxt {
         width: 80vw;
-    }
+        }
 }
 
-/*CONTACT*/
-
-p { 
-    font-size: Bebas Neue;
-    font-size: large;
-    text-align: left;
-/*     margin-top: 20vh;
- */}
+/* End of About */
