@@ -531,6 +531,8 @@ a {
 .jacket-checkout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+
 }
 
 .checkoutform {
@@ -552,9 +554,7 @@ a {
     border: 1px solid greenyellow;
 }
 
-.buynow {
-    width: 30vw;
-}
+
 .jacketbuy {
     margin-top: 2vh;
     width: 15vw;
@@ -574,19 +574,35 @@ a {
     border: 1px solid purple;
     
 }
+/*Checkout Jacket mobile*/
 
-@media (max-screen:650px) {
-
-.jacketcheckout {
-/*     display: grid;
- */    grid-template-columns: 1fr;
-}
+@media (max-width:700px) {
 
 .jacket-checkout {
     display: grid;
     grid-template-columns: 1fr;
-}
+    border: 2px solid darkblue;
+    }
 
+.jacketcheckout {
+    width: 35vw;
+    margin-left: 24vw;
+    margin-top: 5vh;
+    }
+
+.jacketbuy {
+    width: 34vw;
+}    
+
+.checktxt {
+    width: 80vw;
+    margin-left: 5vw;
+    }
+
+.checklayout {
+    width: 35vw;
+    margin-left: -5vw;
+    }
 
 }
 
