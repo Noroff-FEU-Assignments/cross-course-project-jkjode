@@ -1,21 +1,10 @@
 import { jackets } from "./allJackets.js";
-import { shopping-cart } from "./shopping-cart.js";
-
-/*
-{
-   <div class="productbox">
-  <a href="jacket_1.html" >
-  <img src="/images/products/RainyDays_Jacket1.png" alt="The Strong Jacket" class="product1"></img>
-</a>
-  <div class="nametag"><h2>The Strong Jacket<p class="pricetag">$175</p></h2></div>
-</div> 
-}*/
+import { shoppingCart } from "./shoppingCart.js";
 
 const addToCartButton = document.getElementById("buyNow");
 const productSection = document.getElementById("product-section");
 const productBox = document.getElementById("productbox");
-
-/* const jacketSpecific = document.getElementById("product-box");*/
+const jacketSpecific = document.getElementById("jacket-specific");
 
 function displayJackets() {
   Object.keys(jackets).forEach((jacketId) => {
@@ -31,10 +20,10 @@ function displayJackets() {
   });
 }
 
-// if (displayJackets) {
-  displayJackets();
-  displayJackets();
-// }
+displayJackets();
+displayJackets();
+
+console.log(productSection); //tried to see if console log would show what I wanted with the function
 
 if (jacketSpecific) {
   const jacketId = new URLSearchParams(window.location.search).get("id");
