@@ -1,5 +1,5 @@
 import { jackets } from "./allJackets.js";
-import { shoppingCart } from "./shoppingCart.js";
+import { addToCart, cart } from "./shoppingCart.js";
 
 const addToCartButton = document.getElementById("buyNow");
 const productSection = document.getElementById("product-section");
@@ -11,7 +11,7 @@ function displayJackets() {
     const jacket = jackets[jacketId];
     productSection.innerHTML += `
         <div class=jacket-display">
-        <a href="./jackets.html?id=${jacketId}">
+        <a href="./jacket_specific.html?id=${jacketId}">
         <p class="display-title">${jacket.name}</p>
         <img src="${jacket.image}" alt="Image of the ${jacket.name} jacket" />
         <p class="jacket-price">Price <strong>$${jacket.jacketprice}</strong></p>

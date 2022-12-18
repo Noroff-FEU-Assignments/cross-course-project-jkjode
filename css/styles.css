@@ -362,7 +362,7 @@ footer {
     align-items: center;
     }
 
-.productbox {
+.jacket-display {
     background-color: #F2F2F2;
     align-self: start;
     justify-self: center;
@@ -414,7 +414,7 @@ footer {
 
 /* JACKET SPECIFIC */
 
-.jacket-specific {
+.jacket-display {
     margin-top: 5vh;
     width: 89vw;
     height: 100vh;
