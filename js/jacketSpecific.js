@@ -1,18 +1,20 @@
 import { jackets } from "./allJackets.js";
-import { cart } from "./cart.js";
+import { shopping-cart } from "./shopping-cart.js";
 
+/*
 {
-  /* <div class="productbox">
+   <div class="productbox">
   <a href="jacket_1.html" >
   <img src="/images/products/RainyDays_Jacket1.png" alt="The Strong Jacket" class="product1"></img>
 </a>
   <div class="nametag"><h2>The Strong Jacket<p class="pricetag">$175</p></h2></div>
-</div> */
-}
+</div> 
+}*/
 
-const addToCartButton = document.getElementById("add-to-cart");
-const productBox = document.getElementById("productbox");
-const jacketSpecific = document.getElementById("product-box");
+const addToCartButton = document.getElementById("buyNow");
+const productSection = document.getElementById("product-section");
+
+/* const jacketSpecific = document.getElementById("product-box");*/
 
 function displayJackets() {
   Object.keys(jackets).forEach((jacketId) => {
