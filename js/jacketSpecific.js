@@ -13,6 +13,7 @@ import { shopping-cart } from "./shopping-cart.js";
 
 const addToCartButton = document.getElementById("buyNow");
 const productSection = document.getElementById("product-section");
+const productBox = document.getElementById("productbox");
 
 /* const jacketSpecific = document.getElementById("product-box");*/
 
@@ -21,7 +22,7 @@ function displayJackets() {
     const jacket = jackets[jacketId];
     productSection.innerHTML += `
         <div class=jacket-display">
-        <a href="./allJackets.html?id=${jacketId}">
+        <a href="./jackets.html?id=${jacketId}">
         <p class="display-title">${jacket.name}</p>
         <img src="${jacket.image}" alt="Image of the ${jacket.name} jacket" />
         <p class="jacket-price">Price <strong>$${jacket.jacketprice}</strong></p>
@@ -30,10 +31,10 @@ function displayJackets() {
   });
 }
 
-if (displayJackets) {
+// if (displayJackets) {
   displayJackets();
   displayJackets();
-}
+// }
 
 if (jacketSpecific) {
   const jacketId = new URLSearchParams(window.location.search).get("id");
