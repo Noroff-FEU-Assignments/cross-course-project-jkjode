@@ -17,10 +17,6 @@ const productBox = document.getElementById("productbox");
 const jacketSpecific = document.getElementById("jacket-specific");
 const jacketName = new URLSearchParams(window.location.search).get("name");
 
-function getFirstTwo(number) {
-  return number.slice(0, 2);
-}
-
 const fetchJacket = async () => {
   try {
     // debugger;
@@ -37,17 +33,15 @@ const fetchJacket = async () => {
 
 function displayJackets(jackets) {
   jackets.forEach((jacket) => {
+    console.log(jacket.prices);
     productSection.innerHTML += `
-        <div class=jacket-display">
-        <a href="./jacket_specific.html?id=${jacket.id}">
+        <div class="jackets-display">
         <p class="display-title">${jacket.name}</p>
-        <img src="${jacket.images[0].src}" alt="Image of the ${
-      jacket.name
-    } jacket" />
-        <p class="jacket-price">Price <strong>$${getFirstTwo(
-          jacket.prices.price
-        )}</strong></p>
+        <a href="./jacket_specific.html?id=${jacket.id}">
+        <img class="jacket-images" src="${jacket.images[0].src}" alt="Image of the ${jacket.name} jacket" />
         </a>
+        <p class="jacket-price">Price <strong>$${jacket.prices.price}</strong></p>
+        
         </div>`;
   });
 }
@@ -61,10 +55,10 @@ fetchJacket().then((data) => {
     console.log(jacketImage);
     jacketSpecific.innerHTML = `
         
-    <div class=specific-jacket>
-      <div>${jacketId}</div>
-      <div>${jacket.name}</div>
-      <img src="${jacketImage}" alt="${jacketName}"/>
+    <div class="specific-jacket">
+      <div class="jacket-name-specific">${jacket.name}</div>
+      <img class="jacket-image-specific" src="${jacketImage}" alt="${jacketName}"/>
+      <div class="jacket-price">$${jacket.prices.price}</div>
     </div>
     
     `;

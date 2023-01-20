@@ -352,29 +352,29 @@ footer {
 
 /*JACKETS*/
 
-.product-section {
+#product-section {
     width: 89vw;
     height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 120px;
+    /* grid-row-gap: 120px; */
     justify-items: center;
     align-items: center;
     }
 
-.jacket-display {
+.jackets-display {
     background-color: #F2F2F2;
     align-self: start;
     justify-self: center;
     align-content: center;
     justify-content: center;
-    width: 350px;
-    height: 400px;
+    width: 20vw;
+    height: 50vh;
     z-index: 5;
     padding-bottom: 3vh;
     }
 
-.nametag {
+.jacket-name {
     font-family: Bebas Neue;
     font-size: smaller;
     width: 15vw;
@@ -384,19 +384,21 @@ footer {
     border-radius: 2%;
     }
 
-.pricetag {
+.jacket-price {
     font-family: Gentium;
     font-size: xx-large;
+    margin-top: 5vh;
     }
 
-.product1, .product2, .product3, .product4, .product5, .product6 {
-    width: 300px;
-    height: 350px;
+.jacket-images {
+    width: 200px;
+    /* height: 0; */
     align-content: center;
     justify-content: center;
     z-index: 1;
     margin-top: 2vh;
     margin-left: 2.5vh;
+    object-fit: cover;
     }
 
 @media (max-width:650px) {
@@ -434,12 +436,12 @@ footer {
     }
 
 
-.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
+.jacket-image-specific {
     margin-top: 2vh;
     width: 27vw;
     }
 
-.jackettxt {
+.jacket-name-specific {
     width: 35vw;
     color: #3F402D;
     margin-left: 5vw;
