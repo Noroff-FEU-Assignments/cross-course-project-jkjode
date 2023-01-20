@@ -21,7 +21,6 @@ function getFirstTwo(number) {
   return number.slice(0, 2);
 }
 
-
 const fetchJacket = async () => {
   try {
     // debugger;
@@ -36,15 +35,15 @@ const fetchJacket = async () => {
   }
 };
 
-
-
 function displayJackets(jackets) {
   jackets.forEach((jacket) => {
     productSection.innerHTML += `
         <div class=jacket-display">
         <a href="./jacket_specific.html?id=${jacket.id}">
         <p class="display-title">${jacket.name}</p>
-        <img src="${jacket.images[0].src}" alt="Image of the ${jacket.name} jacket" />
+        <img src="${jacket.images[0].src}" alt="Image of the ${
+      jacket.name
+    } jacket" />
         <p class="jacket-price">Price <strong>$${getFirstTwo(
           jacket.prices.price
         )}</strong></p>
@@ -53,45 +52,45 @@ function displayJackets(jackets) {
   });
 }
 
-
 fetchJacket().then((data) => {
   console.log(data);
-  if(jacketSpecific){
+  if (jacketSpecific) {
     const jacketId = new URLSearchParams(window.location.search).get("id");
-    const jacket = data[jacketId];
-    jacketSpecific.innerHTML += `
+    const jacket = data.find((jacket) => jacket.id == jacketId);
+    const jacketImage = jacket.images[0].src;
+    console.log(jacketImage);
+    jacketSpecific.innerHTML = `
         
     <div class=specific-jacket>
-    ${jacketId}
-    
+      <div>${jacketId}</div>
+      <div>${jacket.name}</div>
+      <img src="${jacketImage}" alt="${jacketName}"/>
     </div>
     
     `;
-} else {
-  displayJackets(data)
-}}
-)
-
-
+  } else {
+    displayJackets(data);
+  }
+});
 
 console.log(productSection); //tried to see if console log would show what I wanted with the function
 
-if (jacketSpecific) {
-  fetchJacket().then((data) => {
-    console.log(data);
-  displayJackets(data);
-  }
-  )
-  const jacketId = new URLSearchParams(window.location.search).get("id");
-  const jacket = jackets[jacketId];
-  jacketSpecific.innerHTML = `
-    <div>
-    </div>
-    `;
-  jacketHeader.innerHTML = `
-    ${jacket.name.toUpperCase()}`;
-  addToCartButton.addEventListener("click", function (e) {
-    e.preventDefault();
-    addToCartButton(jacketId);
-  });
-} 
+// if (jacketSpecific) {
+//   fetchJacket().then((data) => {
+//     console.log(data);
+//   displayJackets(data);
+//   }
+//   )
+//   const jacketId = new URLSearchParams(window.location.search).get("id");
+//   const jacket = jackets[jacketId];
+//   jacketSpecific.innerHTML = `
+//     <div>
+//     </div>
+//     `;
+//   jacketHeader.innerHTML = `
+//     ${jacket.name.toUpperCase()}`;
+//   addToCartButton.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     addToCartButton(jacketId);
+//   });
+// }
